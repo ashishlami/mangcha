@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mang Cha — Boba & Smoothies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.png">
+  <style>
+    :root{--ink:#0f172a; --sub:#64748b; --bg1:#fff7ed; --bg2:#fff; --card:#ffffffd8; --shadow:0 10px 25px rgba(0,0,0,.08)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Outfit,system-ui,-apple-system,Segoe UI,Roboto; color:var(--ink);
+      background: radial-gradient(60% 40% at 20% -10%, rgba(245,158,11,.15), transparent 60%),
+                  radial-gradient(60% 40% at 100% 0%, rgba(244,63,94,.12), transparent 60%),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{position:sticky;top:0;z-index:50;backdrop-filter:blur(8px);background:rgba(255,255,255,.7);border-bottom:1px solid #e5e7eb}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;gap:10px;align-items:center}
+    .brand img{width:44px;height:44px;border-radius:12px;object-fit:contain}
+    .brand span{font-weight:800;font-size:18px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:14px;font-weight:700;text-decoration:none;border:1px solid #e5e7eb;background:#fff}
+    .btn.primary{background:#111827;color:#fff;border-color:#111827}
+    section{padding:40px 0}
+    h2{font-size:32px;margin:0 0 8px;font-weight:800}
+    .sub{color:var(--sub);margin:0}
+    /* Hero */
+    .hero{padding:60px 0 40px}
+    .hero-grid{display:grid;gap:22px;grid-template-columns:1fr}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+    .hero h1{font-size:40px;line-height:1.1;font-weight:800;margin:0}
+    @media(min-width:768px){.hero h1{font-size:56px}}
+    .hero p{margin-top:16px;font-size:18px;color:var(--sub)}
+    .hero-card{border:1px solid #e5e7eb;border-radius:22px;background:#fff;box-shadow:var(--shadow);padding:30px;display:flex;align-items:center;justify-content:center;position:relative}
+    .hero-card img{width:70%;max-width:280px}
+    .hero-card span{position:absolute;bottom:10px;right:10px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:6px 12px;font-weight:600;font-size:13px;box-shadow:var(--shadow)}
+    .cta{margin-top:20px}
+    /* Menu */
+    .category{margin-top:28px}
+    .cat-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+    .cat-title{font-weight:800;font-size:22px}
+    .size-note{font-size:12px;color:#6b7280;background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:6px 10px}
+    .grid{display:grid;gap:14px;margin-top:8px;grid-template-columns:1fr}
+    @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+    @media(min-width:1000px){.grid{grid-template-columns:1fr 1fr 1fr}}
+    .card{border:1px solid #e5e7eb;border-radius:18px;background:var(--card);padding:16px;box-shadow:var(--shadow)}
+    .title{font-weight:800}
+    .desc{color:#6b7280;margin:4px 0 8px;font-size:14px}
+    .price{font-weight:800;margin-top:4px}
+    .badge{font-size:11px;padding:4px 8px;border-radius:999px;border:1px solid #fde68a;background:#fffbeb;color:#92400e;font-weight:800;margin-left:6px}
+    /* Visit */
+    .visit{display:grid;gap:18px;grid-template-columns:1fr}
+    @media(min-width:900px){.visit{grid-template-columns:1fr 1fr}}
+    .panel{border:1px solid #e5e7eb;border-radius:22px;background:#fff;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+    footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;font-size:14px;color:#6b7280;background:#fff}
+    .social{display:flex;gap:10px;justify-content:center;margin-top:10px}
+    .social a{padding:8px 12px;border:1px solid #e5e7eb;border-radius:10px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Mang Cha logo">
+        <span>Mang Cha — Drinks & Desserts</span>
+      </div>
+      <nav style="display:flex;gap:20px;font-weight:600">
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn primary" href="#menu">See Menu</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Straight To Our Classic Sips</h1>
+        <p>Boba & Fruit teas, Healthy Smoothies, French Macarons, and Mochi Ice Creams</p>
+        <div class="cta"><a class="btn primary" href="#menu">Jump to Menu</a></div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/logo.png" alt="Mang Cha logo">
+        <span>Sip It , Shake It, Swirl It</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <p class="sub">Everything we serve — organized by category.</p>
+      <div id="menu-root"></div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="container visit">
+      <div class="panel">
+        <h3 style="margin:0;font-size:26px;font-weight:800">Visit Us</h3>
+        <p>9120 North Tarrant Pkwy, North Richland Hills, TX, 76182</p>
+        <p>Mon–Sun: 11:00 AM – 9:30 PM</p>
+        <p><a href="tel:+16824589694">+1 682‑458‑9694</a></p>
+        <a class="btn primary" style="margin-top:10px" href="https://www.google.com/maps/search/?api=1&query=9120+North+Tarrant+Pkwy,+North+Richland+Hills,+TX,+76182" target="_blank">Get Directions</a>
+      </div>
+      <iframe title="Map" class="panel" style="min-height:320px" src="https://www.google.com/maps?q=9120+North+Tarrant+Pkwy,+North+Richland+Hills,+TX,+76182&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="font-weight:800">Mang Cha Boba & Smoothies</div>
+      <div>© 2025 Mang Cha. All rights reserved.</div>
+      <div class="social">
+        <a target="_blank" href="https://www.instagram.com/mangchaboba/">Instagram</a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=61581277717554">Facebook</a>
+        <a target="_blank" href="https://www.tiktok.com/@mang.cha.boba.smo">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Category size labels
+    const SIZE = {
+      "Milk Teas":"16oz / 24oz",
+      "Fruit Teas":"16oz / 24oz",
+      "Classic Iced Teas":"16oz / 24oz",
+      "Fresh Fruity Fun (Slushies)":"16oz / 24oz",
+      "Smoothies":"24oz",
+      "Mang Cha Special":"24oz"
+    };
+
+    const DATA = {
+      "Milk Teas":[
+        ["Royal Thai","$6.75 / $7.75"],
+        ["Honeydew Delight","$6.75 / $7.75"],
+        ["Toasted Almond Silk","$6.75 / $7.75"],
+        ["Island Coconut Dream","$6.75 / $7.75"],
+        ["Golden Mango Glow","$6.75 / $7.75"],
+        ["Strawberry Sweetheart","$6.75 / $7.75"],
+        ["Lavender Bloom","$6.75 / $7.75"],
+        ["Summer Watermelon Splash","$6.75 / $7.75"],
+        ["Signature Classic Milk","$6.75 / $7.75"],
+        ["Jasmine Bloom","$6.75 / $7.75"],
+        ["Golden Oolong Elegance","$6.75 / $7.75"],
+        ["Brown Sugar","$6.95 / $7.95"],
+        ["Taro Bliss","$6.95 / $7.95"],
+        ["Spooky Pumpkin Spiced (New)","$6.95 / $7.95"],
+        ["Okinawa Brown Sugar Cloud","$7.25 / $8.25"],
+        ["Premium Japanese Matcha Green","$7.75 / $8.75"],
+        ["Strawberry Matcha Harmony","$7.75 / $8.75"]
+      ],
+      "Fruit Teas":[
+        ["Strawberry Serenade","$5.75 / $6.75","Popular"],
+        ["Golden Mango Bliss","$5.75 / $6.75"],
+        ["Passionfruit Paradise","$5.75 / $6.75"],
+        ["Peach Sunset Glow","$5.75 / $6.75"],
+        ["Lychee Whisper","$5.75 / $6.75"],
+        ["Kiwi Emerald Splash","$5.75 / $6.75"],
+        ["Red Guava Radiance","$5.75 / $6.75"],
+        ["Lavender Dream Mist","$5.75 / $6.75"],
+        ["Pineapple Tropical Kiss","$5.75 / $6.75"],
+        ["Mystic Dragon","$5.75 / $6.75"],
+        ["Sunset Hibiscus (New)","$6.75 / $7.75"]
+      ],
+      "Classic Iced Teas":[
+        ["Classic Black","$5.79 / $6.59"],
+        ["Classic Green","$5.79 / $6.59"],
+        ["Classic Golden Oolong","$5.99 / $6.89"],
+        ["Classic Jasmine Green","$5.99 / $6.89"]
+      ],
+      "Fresh Fruity Fun (Slushies)":[
+        ["Strawberry Frost","$5.75 / $6.75"],
+        ["Mango Glacier Bliss","$5.75 / $6.75"],
+        ["Passionfruit Chill","$5.75 / $6.75"],
+        ["Peach Frosted Glow","$5.75 / $6.75"],
+        ["Lychee Ice Whisper","$5.75 / $6.75"],
+        ["Kiwi Arctic Splash","$5.75 / $6.75"],
+        ["Guava Crystal Freeze","$5.75 / $6.75"],
+        ["Pineapple Polar Kiss","$5.75 / $6.75"]
+      ],
+      "Smoothies":[
+        ["Green Power Boost","$8.99","Spinach, Banana, Pineapple, Chia seeds — choose your base. Benefit: natural greens for sustained energy."],
+        ["Strawberry Banana Bliss","$8.99","Strawberry, Banana, flaxseed — choose your base. Benefit: antioxidants & protein for recovery."],
+        ["Tropical Muscle Fuel","$8.99","Mango, Raspberry, Pineapple, Greek yogurt — choose your base. Benefit: protein‑packed for post‑workout."],
+        ["Gut‑Friendly Smoothie","$8.99","Banana, Greek yogurt, flaxseed, blueberries, honey, chia seeds — choose your base. Benefit: supports digestive health."],
+        ["Chocolate Banana Indulgence","$8.99","Banana, Cocoa powder, Peanut butter, whole milk. Benefit: energy + protein + antioxidants."]
+      ],
+      "French Macarons":[
+        ["Mango","$4.79"],["Melona Coconut","$4.79"],["Green Tea Matcha","$4.79"],
+        ["Vanilla","$4.79"],["Chocolate","$4.79"],["Pistachio","$4.79"]
+      ],
+      "Mochi Ice Cream":[
+        ["Caramel (2 pcs per order)","$3.99"],
+        ["Pistachio (2 pcs per order)","$3.99"],
+        ["Chocolate (2 pcs per order)","$3.99"],
+        ["Raspberry (2 pcs per order)","$3.99"],
+        ["Lemon (2 pcs per order)","$3.99"],
+        ["Vanilla (2 pcs per order)","$3.99"]
+      ],
+      "Bubble Tea Extras":[
+        ["Popping Boba — Strawberry","+$0.85"],
+        ["Popping Boba — Mango","+$0.85"],
+        ["Popping Boba — Passion Fruit","+$0.85"],
+        ["Popping Boba — Lychee","+$0.85"],
+        ["Popping Boba — Kiwi","+$0.85"],
+        ["Popping Boba — Blueberry","+$0.85"],
+        ["Rainbow Jelly","+$0.85"],
+        ["Mango Nata de Coco","+$0.85"],
+        ["Lychee Nata de Coco","+$0.85"],
+        ["Strawberry Nata de Coco","+$0.85"],
+        ["Coconut Flavor Nata de Coco","+$0.85"],
+        ["Boba Pearl Tapioca","+$0.75"]
+      ],
+      "Add‑Ons":[
+        ["Whey Protein (Vanilla / Milk Chocolate) 20g","$2.50"],
+        ["Plant‑Based Protein (Unflavored) 20g","$2.29"],
+        ["Premium Japanese Matcha","$2.00"],
+        ["Avocado","$1.00"],
+        ["Whole Milk / Apple Juice / White Grape Juice","$0.00"],
+        ["Almond Milk (16oz/24oz)","+$1.00 / +$1.50"],
+        ["Oat Milk (16oz/24oz)","+$1.00 / +$1.50"],
+        ["Coconut water","$1.50"]
+      ],
+      "Mang Cha Special":[
+        ["Himalayan Luscious Lussi (24oz)","$10.99","Special Yogurt, Milk, Cardamom, Coconut & Almond Flakes"],
+        ["Blossom Hibiscus Iced Tea","$5.99 / $7.99","Dried Organic Hibiscus • rich in antioxidants & vitamin C"]
+      ]
+    };
+
+    const root=document.getElementById('menu-root');
+    for(const [cat,items] of Object.entries(DATA)){
+      const section=document.createElement('div');section.className='category';
+      const head=document.createElement('div');head.className='cat-head';
+      const title=document.createElement('div');title.className='cat-title';title.textContent=cat;
+      head.appendChild(title);
+      if(SIZE[cat]){const size=document.createElement('div');size.className='size-note';size.textContent=SIZE[cat];head.appendChild(size);}
+      section.appendChild(head);
+      const grid=document.createElement('div');grid.className='grid';
+      items.forEach(arr=>{
+        const [name,price,descOrBadge]=arr;
+        let badge=(descOrBadge==="Popular"||/\(New\)/i.test(name))?'<span class="badge">'+(descOrBadge==="Popular"?'Popular':'New')+'</span>':'';
+        let desc=(descOrBadge && descOrBadge!=="Popular")?'<div class="desc">'+descOrBadge+'</div>':'';
+        const card=document.createElement('div');card.className='card';
+        card.innerHTML='<div class="title">'+name+' '+badge+'</div>'+desc+'<div class="price">'+price+'</div>';
+        grid.appendChild(card);
+      });
+      section.appendChild(grid);
+      root.appendChild(section);
+    }
+  </script>
+</body>
+</html>
